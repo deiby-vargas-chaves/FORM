@@ -1,0 +1,220 @@
+:root{
+  --color: #4e4e4e;
+  --txt: rgb(0, 0, 0);
+  --bgcolors: rgb(231, 231, 231);
+  --buttoncolor: rgb(110, 170, 0);
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--txt);
+}
+
+.main{
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.main, .logo{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+
+.image_content{
+  background-image: url(/images/free-photo-of-paisaje-agua-montana-corriente.jpeg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 100vh;
+}
+
+.logo{
+  height: auto;
+  background-color:  rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 45vh;
+    gap: 1vw;
+    padding: 0.9375rem 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+  font-size: clamp(2rem , 4rem, 8rem);
+  font-family:initial;
+  color: white;
+
+}
+
+
+.logo1{
+  height: 10vh;
+}
+
+.information{
+  width: 60vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+
+}
+
+.level1{
+  display: flex;
+  flex-flow: column nowrap;
+justify-content: center;
+align-items:flex-start;
+font-family: 'Raleway', sans-serif;
+  font-weight: 31.25rem;
+    width: 100%;
+    height: 30vh;
+    font-size: 1.4rem;
+    background-color: var(--bgcolors);
+    gap: 3.125rem;
+    padding:  7.25rem;
+    
+}
+
+.level1.left .remote{
+  font-size: 1.6rem;
+
+}
+
+
+.level2{
+  background-color: var(--color);
+  height: 40vh;
+  display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+
+.title{
+  display: flex;
+  font-family:'Raleway', sans-serif ;
+  font-size: clamp(20px, 1.75rem, 2rem);
+  padding-left: 4rem;
+  padding-top: 1rem;
+  color:var(--bgcolors) ;
+}
+
+label{
+  font-family:'Raleway', sans-serif ;
+  font-size: 0.8125rem;
+  color:var(--bgcolors) ;
+}
+
+input{
+  display: flex;
+  gap: 3.125rem;
+  width: 30%;
+  font-size: 0.9rem;
+  width: 20rem;
+  height: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+input:invalid{
+  outline: none;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+input:valid{
+  outline: none;
+  border: 2px solid var(--buttoncolor);
+  border-radius: 5px;
+}
+input:focus{
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+
+
+
+.questions{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: -10px;
+}
+
+.level3{
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ 
+
+button {
+  margin-bottom: 1rem ;
+  background: var(--buttoncolor);
+  border: 0.0625rem solid var(--buttoncolor);
+  border-radius: 0.375rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0.0625rem 0.125rem 0.25rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif ;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1rem;
+  min-height: 2.5rem;
+  outline: 0;
+  padding: 0.75rem 3.125rem;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+button:hover,
+button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: var(--buttoncolor);
+}
+
+button:active {
+  opacity: .5;
+}
+
+.log-in{
+  display: flex;
+  gap: 1rem;
+  padding-right: 3rem;
+margin-left:3.125rem ;
+}
+
+
+a{
+  text-decoration: none;
+    color: var(--color);
+    font-weight: 700;
+}
+
+a:hover{
+  color: var(--buttoncolor);
+}
